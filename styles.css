@@ -357,6 +357,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .lingzhi-flow-title b { font-size: 18px; line-height: 1.55; letter-spacing: -.02em; }
 .lingzhi-shot-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
 .lingzhi-showcase { display: grid; grid-template-columns: 1fr .76fr 1fr; gap: 18px; align-items: stretch; }
+.lingzhi-phone-flow { grid-template-columns: repeat(4, 1fr); }
 .lingzhi-shot { margin: 0; overflow: hidden; background: rgba(255,255,255,.64); border: 1px solid rgba(16,35,31,.12); border-radius: 24px; box-shadow: 0 18px 42px rgba(16,35,31,.08); }
 .lingzhi-shot img { display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top center; background: #101010; }
 .lingzhi-shot figcaption { display: grid; gap: 7px; padding: 16px 16px 18px; }
@@ -364,6 +365,13 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .lingzhi-shot figcaption span { color: var(--ink-soft); font-size: 13px; line-height: 1.6; }
 .lingzhi-main-shot { display: flex; flex-direction: column; }
 .lingzhi-main-shot img { aspect-ratio: 16 / 9; flex: 1; }
+.lingzhi-phone-shot img { aspect-ratio: 9 / 16; object-position: top center; background: #f4f5f3; }
+.lingzhi-detail-flow { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.lingzhi-detail-flow figure { margin: 0; overflow: hidden; background: rgba(255,255,255,.76); border: 1px solid rgba(16,35,31,.12); border-radius: 26px; box-shadow: 0 18px 42px rgba(16,35,31,.08); }
+.lingzhi-detail-flow img { display: block; width: 100%; aspect-ratio: 9 / 16; object-fit: cover; object-position: top center; background: #f4f5f3; }
+.lingzhi-detail-flow figcaption { display: grid; gap: 8px; padding: 17px 18px 20px; }
+.lingzhi-detail-flow figcaption b { font-size: 15px; line-height: 1.25; }
+.lingzhi-detail-flow figcaption span { color: var(--ink-soft); font-size: 13px; line-height: 1.65; }
 .lingzhi-process-list { display: grid; gap: 10px; }
 .lingzhi-process-list div { position: relative; min-height: 96px; padding: 16px 16px 16px 54px; background: rgba(255,255,255,.58); border: 1px solid rgba(16,35,31,.1); border-radius: 20px; box-shadow: 0 12px 28px rgba(16,35,31,.06); }
 .lingzhi-process-list b { position: absolute; left: 16px; top: 17px; color: var(--green); font: 900 18px/1 ui-monospace, SFMono-Regular, Menlo, monospace; }
@@ -699,6 +707,8 @@ body.dialog-open { overflow: hidden; }
   .dengke-live-showcase, .dengke-script-layout { grid-template-columns: 1fr; }
   .dengke-business-grid, .dengke-detail-gallery { grid-template-columns: 1fr 1fr; }
   .lingzhi-showcase { grid-template-columns: 1fr; }
+  .lingzhi-phone-flow { grid-template-columns: repeat(2, 1fr); }
+  .lingzhi-detail-flow { grid-template-columns: repeat(2, 1fr); }
   .lingzhi-process-list { grid-template-columns: 1fr 1fr; }
   .case-roadmap { grid-template-columns: 1fr 1fr; }
   .decision-evidence { grid-template-columns: 1fr; margin-top: -12px; }
@@ -781,6 +791,8 @@ body.dialog-open { overflow: hidden; }
   .lingzhi-process-list div { min-height: auto; padding: 15px 15px 15px 52px; border-radius: 18px; }
   .lingzhi-shot { border-radius: 20px; }
   .lingzhi-shot img { aspect-ratio: 16 / 9; }
+  .lingzhi-phone-shot img, .lingzhi-detail-flow img { aspect-ratio: 9 / 16; }
+  .lingzhi-phone-flow, .lingzhi-detail-flow { grid-template-columns: 1fr; }
   .device { width: 43%; border-width: 5px; border-radius: 23px; }
   .flow-arrow { font-size: 24px; }
   .process-list { grid-template-columns: 1fr; }

@@ -180,20 +180,22 @@
             <span>核心流程</span>
             <b>标准文案 → 包装图 → 主体框选 → OCR/规则比对 → AI复核 → A-E报告 → 人工确认</b>
           </div>
-          <div class="lingzhi-showcase" aria-label="棂至精校核心产品流程截图">
-            <figure class="lingzhi-shot lingzhi-main-shot">
-              <img src="assets/lingzhi-workbench.png" alt="棂至精校标准文案与包装图上传入口" loading="lazy" />
-              <figcaption><b>01 输入材料</b><span>标准文案单和包装图共同进入任务，先把核对对象定义清楚。</span></figcaption>
+          <div class="lingzhi-showcase lingzhi-phone-flow" aria-label="棂至精校核心产品流程截图">
+            <figure class="lingzhi-shot lingzhi-phone-shot">
+              <img src="assets/lingzhi-home-upload.jpg" alt="棂至精校文案单与包装图上传入口" loading="lazy" />
+              <figcaption><b>01 输入材料</b><span>标准文案单和包装图共同进入任务，先明确核对对象。</span></figcaption>
             </figure>
-            <div class="lingzhi-process-list">
-              <div><b>02</b><span>主体框选</span><p>先框选需要校对的包装区域，减少图标、箭头、装饰和打样批注干扰。</p></div>
-              <div><b>03</b><span>OCR + 规则比对</span><p>提取文字块、位置和置信度，再按字段一致性做第一轮判断。</p></div>
-              <div><b>04</b><span>语义复核</span><p>DeepSeek 辅助理解多规格、多版本、多包装面，不直接替代对错判断。</p></div>
-              <div><b>05</b><span>人工确认</span><p>差异报告保留证据与建议动作，最终签核仍交给业务人员。</p></div>
-            </div>
-            <figure class="lingzhi-shot lingzhi-main-shot">
-              <img src="assets/lingzhi-results.png" alt="棂至精校人工确认与条码核验状态" loading="lazy" />
-              <figcaption><b>06 输出报告</b><span>文案差异、缺失、多出内容、OCR 存疑和条码状态分开呈现，便于复核。</span></figcaption>
+            <figure class="lingzhi-shot lingzhi-phone-shot">
+              <img src="assets/lingzhi-crop-selection.jpg" alt="棂至精校主体文案框选页面" loading="lazy" />
+              <figcaption><b>02 主体框选</b><span>先框选包装主体文案，减少背景、图标和无关文字干扰。</span></figcaption>
+            </figure>
+            <figure class="lingzhi-shot lingzhi-phone-shot">
+              <img src="assets/lingzhi-processing.jpg" alt="棂至精校AI正在精校页面" loading="lazy" />
+              <figcaption><b>03 AI 处理中</b><span>进入 OCR 识别、字段比对、语义复核与报告整理。</span></figcaption>
+            </figure>
+            <figure class="lingzhi-shot lingzhi-phone-shot">
+              <img src="assets/lingzhi-report-summary.jpg" alt="棂至精校报告页" loading="lazy" />
+              <figcaption><b>04 输出报告</b><span>准确率、条码状态、待确认项和风险项分层呈现。</span></figcaption>
             </figure>
           </div>
         </div>
@@ -798,8 +800,15 @@
           </section>
 
           <section class="detail-shell detail-section">
-            <div class="detail-heading"><span>03</span><h3>方案补充：可解释的核对报告</h3><p>报告页不仅展示准确率，还展示待确认数量、条码状态、扫码验证入口，以及每条差异的标准文案、包装识别、判断说明和建议动作。</p></div>
-            <div class="system-proof-grid"><figure><img src="assets/lingzhi-workbench.png" alt="棂至精校上传与扫描工作台" loading="lazy" /><figcaption><b>任务入口</b><span>标准文案与包装图共同进入核对任务。</span></figcaption></figure><figure><img src="assets/lingzhi-results.png" alt="棂至精校核对结果与差异项" loading="lazy" /><figcaption><b>证据化结果</b><span>按通过、存疑、缺失分类，并保留字段和异常位置。</span></figcaption></figure></div>
+            <div class="detail-heading"><span>03</span><h3>方案补充：从输入到报告的完整链路</h3><p>报告页不仅展示准确率，还展示待确认数量、条码状态、扫码验证入口，以及每条差异的标准文案、包装识别、判断说明和建议动作。以下截图按真实使用顺序展示产品闭环。</p></div>
+            <div class="lingzhi-detail-flow" aria-label="棂至精校完整产品链路截图">
+              <figure><img src="assets/lingzhi-home-upload.jpg" alt="棂至精校首页上传文案单和包装图" loading="lazy" /><figcaption><b>01 上传入口</b><span>文案单与包装图作为双输入，避免只看单一材料造成误判。</span></figcaption></figure>
+              <figure><img src="assets/lingzhi-source-picker.jpg" alt="棂至精校选择文案来源" loading="lazy" /><figcaption><b>02 来源选择</b><span>支持本地文件、微信聊天记录和手动输入，贴近真实办公场景。</span></figcaption></figure>
+              <figure><img src="assets/lingzhi-crop-selection.jpg" alt="棂至精校框选主体文案" loading="lazy" /><figcaption><b>03 主体框选</b><span>先框选需要校对的主体区域，减少背景、批注和无关文字干扰。</span></figcaption></figure>
+              <figure><img src="assets/lingzhi-processing.jpg" alt="棂至精校AI正在识别比对" loading="lazy" /><figcaption><b>04 处理中</b><span>按识别、比对、整理、报告四步推进，让等待过程可感知。</span></figcaption></figure>
+              <figure><img src="assets/lingzhi-report-summary.jpg" alt="棂至精校报告详情页" loading="lazy" /><figcaption><b>05 报告输出</b><span>准确率、待确认项、条码状态和异常项分层呈现，便于人工复核。</span></figcaption></figure>
+              <figure><img src="assets/lingzhi-dashboard.jpg" alt="棂至精校工作台页面" loading="lazy" /><figcaption><b>06 工作台</b><span>保留历史记录、企业标准库和识别规则配置，支撑后续复用。</span></figcaption></figure>
+            </div>
           </section>
 
           <section class="detail-shell detail-section technical-case-section">
